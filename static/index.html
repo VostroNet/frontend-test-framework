@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <div>
+        <form id="form">
+            <div>
+                Username: <input name="username" type="text" required />
+            </div>
+            <div>
+                Password<input name="password" type="password" />
+            </div>
+            <div>
+                <input name="accepttnc" type="checkbox" required /> Accept Terms and Conditions
+            </div>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+    <script>
+        document.getElementById("form").onsubmit = function submitForm(e) {
+            e.preventDefault();
+            document.getElementById("form").innerHTML = "Welcome";
+            return false;
+        }
+    </script>
+</body>
+</html>
